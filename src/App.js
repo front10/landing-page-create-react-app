@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import {
     Hero, Navbar, Team, Sponsors, Footer, Social, Image,
     Button, Header, Container, Section, Video, Column, ContactInfo,
-    Row, Code, ContactUs, Features
+    Row, ContactUs, Features
 } from '@front10/landing-page-book/dist/components';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
