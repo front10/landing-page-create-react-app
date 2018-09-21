@@ -1,0 +1,26 @@
+[
+  {
+    "image": "https://mbtskoudsalg.com/images/responsive-design-png-2.png",
+    "link": "https://front10.com",
+    "linktext": "See more...",
+    "subtitle": "Available in all resolution",
+    "summary": "Example of feature text, this component will allow to you to show all your features.",
+    "title": "Responsive"
+  },
+  {
+    "image": "https://mbtskoudsalg.com/images/responsive-design-png-2.png",
+    "link": "https://front10.com",
+    "linktext": "See more...",
+    "subtitle": "Create your theme",
+    "summary": "Example of feature text, this component will allow to you to show all your features.",
+    "title": "Theming"
+  },
+  {
+    "image": "https://mbtskoudsalg.com/images/responsive-design-png-2.png",
+    "link": "https://front10.com",
+    "linktext": "See more...",
+    "subtitle": "Compatible with many browsers",
+    "summary": "Example of feature text, this component will allow to you to show all your features.",
+    "title": "Browsers"
+  }
+]
