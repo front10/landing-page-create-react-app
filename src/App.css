@@ -14,6 +14,14 @@
   color: #ffffff;
 }
 
-:root{
+.ReactCodeMirror .CodeMirror {
+  border-radius: 10px;
+  height: auto !important;
+}
+
+:root {
   --Navbar-backgroundColor: #419dd7 !important;
+  --Navbar-color: #868686;
+  --Button-borderRadius: 10px;
+  --Button-fontSize: 2rem;
 }
