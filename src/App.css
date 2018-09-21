@@ -1,0 +1,19 @@
+.clouds-background::before{
+  content: "";
+}
+.clouds-background{
+  /* background-image: url('/clouds.svg');
+  background-repeat: no-repeat; */
+  min-width: 100vw;
+  min-height: 560px;
+  position: sticky;
+  margin-top: -40%;
+}
+
+.navbar a.NavbarLink{ 
+  color: #ffffff;
+}
+
+:root{
+  --Navbar-backgroundColor: #419dd7 !important;
+}
