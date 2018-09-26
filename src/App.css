@@ -1,27 +1,100 @@
-.clouds-background::before{
-  content: "";
-}
-.clouds-background{
-  /* background-image: url('/clouds.svg');
-  background-repeat: no-repeat; */
-  min-width: 100vw;
-  min-height: 560px;
-  position: sticky;
-  margin-top: -40%;
-}
-
-.navbar a.NavbarLink{ 
-  color: #ffffff;
+body {
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .ReactCodeMirror .CodeMirror {
-  border-radius: 10px;
   height: auto !important;
 }
 
+.ContactUs {
+  margin-left: auto;
+  max-width: 500px;
+  margin-right: auto;
+}
+
+.BuildWith .ImageList .ImageList__Container img {
+  max-width: 200px;
+  width: 200px;
+}
+
+.features img,
+.Team img {
+  height: 100px;
+}
+
+.main-header {
+  font-size: 5rem;
+  color: rgb(246, 204, 32);
+}
+
+.main-subheader {
+  font-size: 2rem;
+  color: rgb(246, 204, 32);
+  font-style: italic;
+}
+
+.Contact-Header {
+  color: #fff;
+}
+
+.Contact-Subheader {
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.main-svg {
+  width: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#cow {
+  transform-origin: 50% 50%;
+  animation: progress-indef 15s linear infinite;
+}
+
+#bang {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes progress-indef {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-svg {
+    display: none;
+  }
+}
+
 :root {
-  --Navbar-backgroundColor: #419dd7 !important;
-  --Navbar-color: #868686;
-  --Button-borderRadius: 10px;
-  --Button-fontSize: 2rem;
+  --Input-borderRadius: 5px;
+  --Input-fontSize: 1rem;
+  --Button-borderRadius: 5px;
+  --ContactUs__SubmitButton-backgroundColor: #fed136;
+  --ContactUs__SubmitButton--hover-backgroundColor: #fec810;
+  --Button-padding: 1rem 4rem;
+  --Hero__Header-color: #fed136;
+  --Hero__SubHeader-color: #fed136;
 }

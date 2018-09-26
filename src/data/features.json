@@ -1,26 +1,30 @@
 [
   {
-    "image": "https://mbtskoudsalg.com/images/responsive-design-png-2.png",
-    "link": "https://front10.com",
-    "linktext": "See more...",
-    "subtitle": "Available in all resolution",
-    "summary": "Example of feature text, this component will allow to you to show all your features.",
-    "title": "Responsive"
+    "image": "images/features/code.png",
+    "title": "simple",
+    "subtitle": "Easy to use",
+    "summary": "Very easy to use, you can do a lot in your wep application with little code.",
+    "link": "link1"
   },
   {
-    "image": "https://mbtskoudsalg.com/images/responsive-design-png-2.png",
-    "link": "https://front10.com",
-    "linktext": "See more...",
-    "subtitle": "Create your theme",
-    "summary": "Example of feature text, this component will allow to you to show all your features.",
-    "title": "Theming"
+    "image": "images/features/speed.png",
+    "title": "faster dev",
+    "subtitle": "Fast like Usain Bolt",
+    "summary": "With our components you can develop a wep app faster than Usain Bolt in 100 meters flat.",
+    "link": "link2"
   },
   {
-    "image": "https://mbtskoudsalg.com/images/responsive-design-png-2.png",
-    "link": "https://front10.com",
-    "linktext": "See more...",
-    "subtitle": "Compatible with many browsers",
-    "summary": "Example of feature text, this component will allow to you to show all your features.",
-    "title": "Browsers"
+    "image": "images/features/themes.png",
+    "title": "theming",
+    "subtitle": "Easy to create themes",
+    "summary": "Library customization with Css variables for easy theming and component changes.",
+    "link": "link3"
+  },
+  {
+    "image": "images/features/testing.png",
+    "title": "unit test",
+    "subtitle": "Robust components",
+    "summary": "All our components tested, like a Swiss watch. With code coverage above 50%",
+    "link": "link4"
   }
 ]
