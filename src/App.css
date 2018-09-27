@@ -120,6 +120,10 @@ body {
   }
 }
 
+.CodeMirror-scroll{
+    overflow: hidden !important;
+}
+
 :root {
   --Input-borderRadius: 5px;
   --Input-fontSize: 1rem;
