@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {
     Hero,
     Team,
-    Sponsors,
     Footer,
     Social,
     Image,
@@ -14,11 +13,14 @@ import {
     Column,
     Row,
     Code,
-    ContactUs,
     Features,
     Copyright,
     GithubButton,
-    BuiltWith
+    BuiltWith,
+    Gif,
+    Backers,
+    Donation,
+    Link
 } from "@front10/landing-page-book/dist/components";
 
 //core
@@ -34,10 +36,10 @@ import "./App.css";
 import AnimatedHero from "./components/hero";
 
 import team from "./data/team.json";
-import sponsors from "./data/sponsors.json";
 import features from "./data/features.json";
 import particles from "./data/particles.json";
 import build from "./data/build.json";
+import backers from "./data/backers.json";
 import { navBarCode, importThemes } from "./data/code";
 
 
@@ -51,15 +53,16 @@ class App extends Component {
                         <Header className="main-header">Landing Page Book</Header>
                         <Header className="main-subheader">React components to build!</Header>
                         <div className="mt-5">
+                            <Link
+                                className="btn btn-primary btn-started"
+                                href="https://front10.com/landing-page-book"
+                                target="_blank"
+                            >
+                                Tell Me More
+          </Link>
                             <GithubButton
                                 btnType="star"
                                 btnText="Stars"
-                                username="front10"
-                                repository="landing-page-book"
-                            />
-                            <GithubButton
-                                btnType="download"
-                                btnText="Download"
                                 username="front10"
                                 repository="landing-page-book"
                             />
@@ -67,6 +70,16 @@ class App extends Component {
                         <AnimatedHero />
                     </Container>
                 </Hero>
+                <Section gray>
+                    <Container className="text-center">
+                        <Image
+                            className="gif-toolbar"
+                            src="images/demo/top-bar.svg"
+                            alt="Code tool bar"
+                        />
+                        <Gif autoplay image="images/demo/code.gif" />
+                    </Container>
+                </Section>
                 <Section
                     subTitle="Landing page book is the professional choice for developers"
                     title="FEATURES"
@@ -79,6 +92,15 @@ class App extends Component {
                             showSubtitle={true}
                         />
                     </Container>
+                    <Container className="text-center">
+                        <Link
+                            className="btn btn-primary btn-started"
+                            href="https://front10.com/landing-page-book"
+                            target="_blank"
+                        >
+                            Tell Me More
+        </Link>
+                    </Container>
                 </Section>
                 <Section
                     subTitle="One Look Is Worth A Thousand Words"
@@ -87,6 +109,15 @@ class App extends Component {
                 >
                     <Container>
                         <Video source="https://youtu.be/dCrLwWdju68" />
+                    </Container>
+                    <Container className="text-center mt-5">
+                        <Link
+                            className="btn btn-primary btn-started"
+                            href="https://front10.com/landing-page-book"
+                            target="_blank"
+                        >
+                            Tell Me More
+        </Link>
                     </Container>
                 </Section>
                 <Section subTitle="Very fast and easy to use" title="OUR CODE">
@@ -155,10 +186,28 @@ class App extends Component {
                             </Column>
                         </Row>
                     </Container>
+                    <Container className="text-center mt-4">
+                        <Link
+                            className="btn btn-primary btn-started"
+                            href="https://front10.com/landing-page-book"
+                            target="_blank"
+                        >
+                            Tell Me More
+        </Link>
+                    </Container>
                 </Section>
                 <Section subTitle="Used tecnologies and frameworks" title="BUILD WITH" gray>
                     <Container className="text-center BuildWith">
-                        <BuiltWith companies={build} />
+                        <BuiltWith gray companies={build} />
+                    </Container>
+                    <Container className="text-center mt-3">
+                        <Link
+                            className="btn btn-primary btn-started"
+                            href="https://front10.com/landing-page-book"
+                            target="_blank"
+                        >
+                            Tell Me More
+        </Link>
                     </Container>
                 </Section>
                 <Section subTitle="These are our members" title="TEAM">
@@ -166,46 +215,48 @@ class App extends Component {
                         <Team
                             showBorder={false}
                             members={team}
-                            socials={["facebook", "linkedin", "twitter"]}
+                            socials={["linkedin", "twitter"]}
                         />
                     </Container>
-                </Section>
-                <Section gray>
                     <Container className="text-center">
-                        <Sponsors gray sponsors={sponsors} />
+                        <Link
+                            className="btn btn-primary btn-started"
+                            href="https://front10.com/landing-page-book"
+                            target="_blank"
+                        >
+                            Tell Me More
+        </Link>
                     </Container>
                 </Section>
-                <Hero
-                    image="images/hero/map-image.png"
-                    opacity={0}
-                    particles={false}
-                    backgroundColor="#212529"
-                    minHeight="75vh"
-                >
+                <Section subTitle="Who donates us" title="BACKERS" gray>
                     <Container className="text-center">
-                        <Header className="Contact-Header">BOOK A FREE CONSULTATION</Header>
-                        <Header type="h3" className="Contact-Subheader mb-5">
-                            Our Headquarters in Miami, FL.
-        </Header>
-                        <ContactUs />
+                        <Backers backers={backers} />
+                        <div className="mt-5">
+                            <Donation url="https://front10.com" />
+                        </div>
                     </Container>
-                </Hero>
+                </Section>
                 <Footer>
                     <Row>
                         <Column className="col-sm-12 col-md">
-                            <Copyright showAllRightText={false} text="Front10, Inc" />
+                            <Copyright showAllRightText={false} text="Front10, LLC" />
                         </Column>
                         <Column className="col-sm-12 col-md mt-3 mt-md-0">
-                            <Image
-                                alt="Front 10 logo"
-                                src="https://front10.com/img/logos/logo-main.png"
-                                width="100"
+                            <Link href="https://front10.com/" target="_blank">
+                                <Image
+                                    alt="Front 10 logo"
+                                    src="https://front10.com/img/logos/logo-main.png"
+                                    width="100"
+                                />
+                            </Link>
+                        </Column>
+                        <Column className="col-sm-12 col-md mt-3 mt-md-0">
+                            <Social gray type="twitter" url="https://twitter.com/front10hello" />
+                            <Social
+                                gray
+                                type="linkedin"
+                                url="https://www.linkedin.com/company/front10/"
                             />
-                        </Column>
-                        <Column className="col-sm-12 col-md mt-3 mt-md-0">
-                            <Social gray type="twitter" url="https://front10.com" />
-                            <Social gray type="facebook" url="https://front10.com" />
-                            <Social gray type="linkedin" url="https://front10.com" />
                         </Column>
                     </Row>
                 </Footer>
