@@ -1,18 +1,23 @@
 {
-  "name": "demo-front10-landing-page",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://front10.com/landing-page-create-react-app/",
-  "dependencies": {
-    "@front10/landing-page-book": "^0.1.11",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-scripts": "1.1.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "name": "landing-page-create-react-app",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "https://front10.com/landing-page-create-react-app/",
+    "dependencies": {
+        "@front10/landing-page-book": "^0.1.11",
+        "react": "^16.5.1",
+        "react-dom": "^16.5.1",
+        "react-scripts": "1.1.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+    },
+    "devDependencies": {
+        "gh-pages": "^2.0.0"
+    }
 }
