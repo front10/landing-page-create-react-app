@@ -26,7 +26,7 @@ Open in your web browser the address http://127.0.0.1:3000
 
 # Demo
 
-![Screenshot of the demo](https://raw.githubusercontent.com/front10/landing-page-create-react-app/master/screencapture.png)
+![Screenshot of the demo](https://raw.githubusercontent.com/front10/landing-page-create-react-app/master/capture.png)
 
 
 # Links
