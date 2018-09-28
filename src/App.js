@@ -142,7 +142,7 @@ class App extends Component {
                             </Column>
                         </Row>
                         <Row>
-                            <Column className="col col-md-6 mt-4 code-secondary">
+                            <Column className="col col-md-6 mt-5 code-secondary">
                                 <div className="text-center">
                                     <Header type="h5" borderBottom>
                                         App.js
@@ -159,7 +159,7 @@ class App extends Component {
                                     lineNumbers={true}
                                 />
                             </Column>
-                            <Column className="col col-md-6 mt-4">
+                            <Column className="col col-md-6 mt-5">
                                 <div className="text-center">
                                     <Header type="h5" borderBottom>
                                         Result
