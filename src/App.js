@@ -137,7 +137,7 @@ class App extends Component {
                                     code={importThemes}
                                     showheader={false}
                                     showfooter={false}
-                                    lineNumbers={false}
+                                    lineNumbers={true}
                                 />
                             </Column>
                         </Row>
@@ -156,7 +156,7 @@ class App extends Component {
                                     code={navBarCode}
                                     showheader={false}
                                     showfooter={false}
-                                    lineNumbers={false}
+                                    lineNumbers={true}
                                 />
                             </Column>
                             <Column className="col col-md-6 mt-4">
