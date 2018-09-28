@@ -4,7 +4,7 @@
     "private": true,
     "homepage": "https://front10.com/landing-page-create-react-app/",
     "dependencies": {
-        "@front10/landing-page-book": "^0.1.11",
+        "@front10/landing-page-book": "^0.1.13",
         "react": "^16.5.1",
         "react-dom": "^16.5.1",
         "react-scripts": "1.1.5"

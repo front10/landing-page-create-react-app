@@ -13,7 +13,7 @@ body {
 }
 
 .GithubDetail_btn {
-  border-radius: 0;
+  border-radius: 5x;
 }
 
 .BuildWith .ImageList .ImageList__Container img {
@@ -51,7 +51,7 @@ body {
   background: #fed136;
   border-color: #fed136;
   color: #383e45;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .btn-started:hover {
@@ -98,7 +98,7 @@ body {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 965px) {
   .main-svg {
     display: none;
   }
@@ -120,6 +120,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .Footer .row .col {
+    flex-basis: auto;
+  }
+}
+
 .CodeMirror-scroll{
     overflow: hidden !important;
 }
@@ -127,10 +133,31 @@ body {
 :root {
   --Input-borderRadius: 5px;
   --Input-fontSize: 1rem;
-  --Button-borderRadius: 0px;
+  --Button-borderRadius: 1px;
   --Button-padding: 1rem 4rem;
-  --GithubDetail__countbubble-borderradius: 0em;
+  --GithubDetail__countbubble-borderradius: 3px;
   --GithubDetail__countbubble-padding: 8px;
   --Hero__Header-color: #fed136;
   --Hero__SubHeader-color: #fed136;
 }
+
+
+.code-secondary .ReactCodeMirror .CodeMirror {
+  height: 350px !important;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* /* end Scroll */

@@ -58,7 +58,7 @@ class App extends Component {
                                 href="https://front10.com/landing-page-book"
                                 target="_blank"
                             >
-                                Tell Me More
+                                Explore
           </Link>
                             <GithubButton
                                 btnType="star"
@@ -98,7 +98,7 @@ class App extends Component {
                             href="https://front10.com/landing-page-book"
                             target="_blank"
                         >
-                            Tell Me More
+                            Explore
         </Link>
                     </Container>
                 </Section>
@@ -116,41 +116,39 @@ class App extends Component {
                             href="https://front10.com/landing-page-book"
                             target="_blank"
                         >
-                            Tell Me More
+                            Explore
         </Link>
                     </Container>
                 </Section>
                 <Section subTitle="Very fast and easy to use" title="OUR CODE">
                     <Container>
                         <Row>
-                            <Column className="col col-md-3">
-                                <Header type="h5" borderBottom>
-                                    How to use ?
-            </Header>
-                                <p>You can import our components of easy from.</p>
-                            </Column>
-                            <Column className="col col-md-9">
-                                <div>
-                                    <Code
-                                        readOnly
-                                        theme="oceanic-next"
-                                        languageCode="jsx"
-                                        code={importThemes}
-                                        showheader={false}
-                                        showfooter={false}
-                                        lineNumbers={false}
-                                    />
+                            <Column className="col col-md-12">
+                                <div className="text-center">
+                                    <Header type="h5" borderBottom>
+                                        How to use ?
+                                </Header>
+                                    <p>You can import our components of easy from.</p>
                                 </div>
+                                <Code
+                                    readOnly
+                                    theme="oceanic-next"
+                                    languageCode="jsx"
+                                    code={importThemes}
+                                    showheader={false}
+                                    showfooter={false}
+                                    lineNumbers={false}
+                                />
                             </Column>
                         </Row>
-                        <Row className="mt-5">
-                            <Column className="col col-md-3">
-                                <Header type="h5" borderBottom>
-                                    App.js
-            </Header>
-                                <p>An example used to create a beautiful hero component</p>
-                            </Column>
-                            <Column className="col col-md-9">
+                        <Row>
+                            <Column className="col col-md-6 mt-4 code-secondary">
+                                <div className="text-center">
+                                    <Header type="h5" borderBottom>
+                                        App.js
+                                </Header>
+                                    <p>An example used to create a beautiful hero component</p>
+                                </div>
                                 <Code
                                     readOnly
                                     theme="oceanic-next"
@@ -160,11 +158,19 @@ class App extends Component {
                                     showfooter={false}
                                     lineNumbers={false}
                                 />
+                            </Column>
+                            <Column className="col col-md-6 mt-4">
+                                <div className="text-center">
+                                    <Header type="h5" borderBottom>
+                                        Result
+                                </Header>
+                                    <p>It's that easy to have a beautiful Hero</p>
+                                </div>
                                 <div className="mt-3">
                                     <Hero
                                         backgroundColor="#212529"
                                         header="Front10"
-                                        minHeight="400px"
+                                        minHeight="350px"
                                         subHeader="Rewriting the world with React"
                                         image="images/hero/map-image.png"
                                         particlesParams={{
@@ -185,6 +191,14 @@ class App extends Component {
                                 </div>
                             </Column>
                         </Row>
+                        <Row className="mt-5">
+                            <Column className="col col-md-3">
+
+                            </Column>
+                            <Column className="col col-md-12 text-center">
+
+                            </Column>
+                        </Row>
                     </Container>
                     <Container className="text-center mt-4">
                         <Link
@@ -192,22 +206,13 @@ class App extends Component {
                             href="https://front10.com/landing-page-book"
                             target="_blank"
                         >
-                            Tell Me More
+                            Explore
         </Link>
                     </Container>
                 </Section>
                 <Section subTitle="Used tecnologies and frameworks" title="BUILD WITH" gray>
                     <Container className="text-center BuildWith">
                         <BuiltWith gray companies={build} />
-                    </Container>
-                    <Container className="text-center mt-3">
-                        <Link
-                            className="btn btn-primary btn-started"
-                            href="https://front10.com/landing-page-book"
-                            target="_blank"
-                        >
-                            Tell Me More
-        </Link>
                     </Container>
                 </Section>
                 <Section subTitle="These are our members" title="TEAM">
@@ -224,7 +229,7 @@ class App extends Component {
                             href="https://front10.com/landing-page-book"
                             target="_blank"
                         >
-                            Tell Me More
+                            Explore
         </Link>
                     </Container>
                 </Section>
