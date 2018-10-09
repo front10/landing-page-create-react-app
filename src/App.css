@@ -1,163 +1,159 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:400,700";
 body {
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .ReactCodeMirror .CodeMirror {
-  height: auto !important;
+    height: auto !important;
 }
 
 .ContactUs {
-  margin-left: auto;
-  max-width: 500px;
-  margin-right: auto;
+    margin-left: auto;
+    max-width: 500px;
+    margin-right: auto;
 }
 
 .GithubDetail_btn {
-  border-radius: 5x;
+    border-radius: 5x;
+}
+
+.GithubDetail_btn_container .speech-bubble {
+    border-radius: 3px;
+    padding: 7px 10px 10px 5px;
 }
 
 .BuildWith .ImageList .ImageList__Container img {
-  max-width: 200px;
-  width: 200px;
+    max-width: 200px;
+    width: 200px;
+}
+
+.Hero__SubHeader,
+.Hero__Header {
+    color: #fed136 !important;
+}
+
+.Card__Summary {
+    background-color: transparent !important;
 }
 
 .features img,
 .Team img {
-  height: 100px;
+    height: 100px;
 }
 
-.Gif .gif_player img {
-  width: auto;
+.Video {
+    max-width: 800px;
 }
 
 .main-header {
-  font-size: 5rem;
-  font-weight: 700;
-  color: rgb(246, 204, 32);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(246, 204, 32);
 }
 
 .main-subheader {
-  font-size: 2rem;
-  color: rgb(246, 204, 32);
-  font-style: italic;
+    font-size: 1.8rem;
+    color: rgb(246, 204, 32);
 }
 
 .gif-toolbar {
-  max-width: 360px;
-  margin-top: 6px;
+    max-width: 570px;
+    margin-top: 6px;
 }
 
 .btn-started {
-  background: #fed136;
-  border-color: #fed136;
-  color: #383e45;
-  border-radius: 5px;
+    background: #fed136;
+    border-color: #fed136;
+    color: #383e45;
+    border-radius: 5px;
+    margin-right: 0.3em;
 }
 
 .btn-started:hover {
-  background-color: #fec810 !important;
-  border-color: #fec810 !important;
-  color: #fff;
+    background-color: #fec810 !important;
+    border-color: #fec810 !important;
+    color: #fff;
 }
 
 .main-svg {
-  width: 300px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+    width: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 #cow {
-  transform-origin: 50% 50%;
-  animation: progress-indef 15s linear infinite;
+    transform-origin: 50% 50%;
+    animation: progress-indef 15s linear infinite;
 }
 
 #bang {
-  opacity: 0;
-  animation-name: bounceIn;
-  animation-duration: 7s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 @keyframes progress-indef {
-  0% {
-    transform: rotate(360deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes bounceIn {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
 }
 
 @media (max-width: 965px) {
-  .main-svg {
-    display: none;
-  }
-  .main-header {
-    font-size: 2rem;
-  }
-  .main-subheader {
-    font-size: 1rem;
-  }
-  .gif-toolbar {
-    margin-top: 15px;
-  }
-  .Section div.p-5 {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-  .BuildWith .ImageList .ImageList__Container img {
-    margin: 10px 0;
-  }
+    .main-svg {
+        display: none;
+    }
+    .main-header {
+        font-size: 2rem;
+    }
+    .main-subheader {
+        font-size: 1.2rem;
+    }
+    .gif-toolbar {
+        margin-top: 15px;
+    }
+    .Section div.p-5 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .BuildWith .ImageList .ImageList__Container img {
+        margin: 10px 0;
+        width: 100px;
+    }
+    .main-logo {
+        width: 100px;
+    }
 }
 
 @media (max-width: 767px) {
-  .Footer .row .col {
-    flex-basis: auto;
-  }
+    .Footer .row .col {
+        flex-basis: auto;
+    }
 }
 
-.CodeMirror-scroll{
-    overflow: hidden !important;
+.CodeMirror-scroll {
+    overflow: scroll !important;
+    overflow-y: hidden !important;
 }
-
-:root {
-  --Input-borderRadius: 5px;
-  --Input-fontSize: 1rem;
-  --Button-borderRadius: 1px;
-  --Button-padding: 1rem 4rem;
-  --GithubDetail__countbubble-borderradius: 3px;
-  --GithubDetail__countbubble-padding: 8px;
-  --Hero__Header-color: #fed136;
-  --Hero__SubHeader-color: #fed136;
-}
-
 
 .code-secondary .ReactCodeMirror .CodeMirror {
-  height: 350px !important;
+    height: 350px !important;
 }
 
-/* Scroll */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 10px;
+.theme-code .ReactCodeMirror .CodeMirror {
+    height: 236px !important;
 }
-::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}
-::-webkit-scrollbar-thumb {
-  background: #888; 
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
-/* /* end Scroll */
