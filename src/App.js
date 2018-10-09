@@ -45,7 +45,7 @@ class App extends Component {
         <Row className="mt-5">
           <Column>
             <Header borderBottom type="h3">
-              This an example of use landing page book in gatsby js
+              This an example of use landing page book in create react app
             </Header>
           </Column>
         </Row>
