@@ -1,7 +1,6 @@
 {
 	"name": "landing-page-create-react-app",
 	"version": "1.0.0",
-	"private": true,
 	"homepage": "https://landing-page-cra.front10.cloud",
 	"dependencies": {
 		"@front10/landing-page-book": "^0.1.16",
