@@ -2,5 +2,12 @@
 	"version": 2,
 	"name": "landing-page-create-react-app",
 	"scope": "front10",
-	"alias": "landing-page-cra.front10.cloud"
+	"alias": "landing-page-cra.front10.cloud",
+	"builds": [
+		{
+			"src": "package.json",
+			"use": "@now/static-build",
+			"config": { "distDir": "public" }
+		}
+	]
 }
