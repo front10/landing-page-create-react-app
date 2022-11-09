@@ -6,7 +6,7 @@
 		"@front10/landing-page-book": "^0.1.16",
 		"react": "^16.5.1",
 		"react-dom": "^16.5.1",
-		"react-scripts": "1.1.5"
+		"react-scripts": "5.0.1"
 	},
 	"scripts": {
 		"start": "react-scripts start",
